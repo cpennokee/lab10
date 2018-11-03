@@ -72,13 +72,13 @@
      */
     public int fibonacci(int n)
     {
-         if (n == 1 || n == 2)
-         {
-             return 1;
-         } else
-         {
-             return fibonacci(n - 1) + fibonacci(n - 2);
-         }
+        if (n == 1 || n == 2)
+        {
+            return 1;
+        } else
+        {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
 
         /**
          * Class that represents a tree. This is a data structure comprised of several nodes. Each node may
@@ -110,22 +110,23 @@
 
         public Tree(int value)
         {
-            //TODO
+            children = new ArrayList<Tree>();
+            this.value = value;
         }
 
         public int getValue()
         {
-            //TODO
+            return value;
         }
 
         public ArrayList<Tree> getChildren()
         {
-            //TODO
+            return children;
         }
 
         public void add(Tree child)
         {
-            //TODO
+            children.add(child);
         }
     }
 
